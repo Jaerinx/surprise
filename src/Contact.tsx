@@ -15,7 +15,7 @@ export default function Contact() {
     mode: "onTouched"
   });
   const [isSuccess, setIsSuccess] = useState(false);
-  const [message, setMessage] = useState(false);
+  const [message, setMessage] = useState("");
 
   // Please update the Access Key in the .env
   const apiKey = "958c857c-db2b-416e-85b3-e47fa786d084";
