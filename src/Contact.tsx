@@ -1,5 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-import { AnimatePresence, motion } from "motion/react";
+import { motion } from "motion/react";
 import { useForm } from "react-hook-form";
 import useWeb3Forms from "@web3forms/react";
 import { useState } from "react";
@@ -26,12 +25,12 @@ export default function Contact() {
       from_name: "Personal Portfolio",
       subject: "New submit from contact form :3"
     },
-    onSuccess: (msg, data) => {
+    onSuccess: (msg) => {
       setIsSuccess(true);
       setMessage(msg);
       reset();
     },
-    onError: (msg, data) => {
+    onError: (msg) => {
       setIsSuccess(false);
       setMessage(msg);
     }

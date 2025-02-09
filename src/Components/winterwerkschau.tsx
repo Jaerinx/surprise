@@ -41,12 +41,12 @@ export default function Winterwerkschau({
         </div>
         <div className="absolute left-[20vw] flex w-[65vw] justify-between top-[20vh]">
           <img
-            src="assets/winterwerkschau/winterwerkschau_2024_1.png"
+            src="/assets/winterwerkschau/winterwerkschau_2024_1.png"
             alt=""
             className="h-[90vh]"
           />
           <img
-            src="assets/winterwerkschau/winterwerkschau_2024_2.png"
+            src="/assets/winterwerkschau/winterwerkschau_2024_2.png"
             alt=""
             className="h-[90vh]"
           />

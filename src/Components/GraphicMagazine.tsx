@@ -10,8 +10,8 @@ export default function GraphicMagazine({
   const ref = useRef(null);
   const isInView = useInView(ref, { amount: 0.25 });
   const image_src_illustrator = [
-    "/assets/Graphic Magazine/GraphicMagazine_1.png",
-    "/assets/Graphic Magazine/GraphicMagazine_2.png"
+    "/assets/Graphic_Magazine/GraphicMagazine_1.png",
+    "/assets/Graphic_Magazine/GraphicMagazine_2.png"
   ];
   const sliderVariants = {
     initial: {
@@ -55,7 +55,7 @@ export default function GraphicMagazine({
             })}
           </div>
           <img
-            src="/assets/Graphic Magazine/GraphicMagazine_3.png"
+            src="/assets/Graphic_Magazine/GraphicMagazine_3.png"
             alt=""
             className="ml-[1vw] mt-[10vw]"
           />

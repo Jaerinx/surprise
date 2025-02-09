@@ -44,7 +44,7 @@ export default function PosterDesign({
           </div>
           <span className="absolute top-[30vh]">
             <img
-              src="assets/erstiparty/woman.png"
+              src="/assets/erstiparty/woman.png"
               alt=""
               className="w-[17vw]"
             />
@@ -56,7 +56,7 @@ export default function PosterDesign({
             </div>
           </span>
           <img
-            src="assets/erstiparty/poster.png"
+            src="/assets/erstiparty/poster.png"
             alt=""
             className="absolute left-[30vw] h-[80vh] top-[20vh]"
           />
