@@ -2,6 +2,8 @@
 import { motion } from "motion/react";
 import { useInView } from "motion/react";
 import { useEffect, useRef } from "react";
+import winterwerkschau_1 from "/assets/winterwerkschau/winterwerkschau_2024_1.png";
+import winterwerkschau_2 from "/assets/winterwerkschau/winterwerkschau_2024_2.png";
 export default function Winterwerkschau({
   setIndex
 }: {
@@ -40,16 +42,8 @@ export default function Winterwerkschau({
           </motion.div>
         </div>
         <div className="absolute left-[20vw] flex w-[65vw] justify-between top-[20vh]">
-          <img
-            src="/assets/winterwerkschau/winterwerkschau_2024_1.png"
-            alt=""
-            className="h-[90vh]"
-          />
-          <img
-            src="/assets/winterwerkschau/winterwerkschau_2024_2.png"
-            alt=""
-            className="h-[90vh]"
-          />
+          <img src={winterwerkschau_1} alt="" className="h-[90vh]" />
+          <img src={winterwerkschau_2} alt="" className="h-[90vh]" />
         </div>
       </motion.div>
     </>

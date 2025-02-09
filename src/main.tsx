@@ -12,10 +12,10 @@ createRoot(document.getElementById("root")!).render(
     <BrowserRouter>
       <AnimatePresence mode="wait">
         <Routes>
-          <Route path="Home" element={<Portfolio />} />
-          <Route path="/" element={<Navigate to="/Home" />} />
-          <Route path="*" element={<Navigate to="/Home" />} />
-          <Route path="Contact" element={<Contact />} />
+          <Route path="/home" element={<Portfolio />} />
+          <Route path="/" element={<Navigate to="/home" />} />
+          <Route path="*" element={<Navigate to="/home" />} />
+          <Route path="contact" element={<Contact />} />
         </Routes>
       </AnimatePresence>
     </BrowserRouter>

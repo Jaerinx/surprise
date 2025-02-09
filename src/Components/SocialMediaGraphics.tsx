@@ -2,6 +2,8 @@
 import { motion } from "motion/react";
 import { useInView } from "motion/react";
 import { useEffect, useRef } from "react";
+import { graphics_arr } from "./images";
+import { musk_arr } from "./images";
 export default function SocialMediaGraphics({
   setIndex
 }: {
@@ -9,27 +11,6 @@ export default function SocialMediaGraphics({
 }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { amount: 0.25 });
-  const image_src_illustrator = [
-    "/assets/SocialMediaGraphics/graphics_1.jpg",
-    "/assets/SocialMediaGraphics/graphics_2.jpg",
-    "/assets/SocialMediaGraphics/graphics_3.jpg",
-    "/assets/SocialMediaGraphics/graphics_4.jpg",
-    "/assets/SocialMediaGraphics/graphics_5.jpg",
-    "/assets/SocialMediaGraphics/graphics_6.jpg",
-    "/assets/SocialMediaGraphics/graphics_7.jpg",
-    "/assets/SocialMediaGraphics/graphics_8.jpg",
-    "/assets/SocialMediaGraphics/graphics_9.jpg",
-    "/assets/SocialMediaGraphics/graphics_10.jpg"
-  ];
-  const image_src_musk = [
-    "/assets/SocialMediaGraphics/musk_1.jpg",
-    "/assets/SocialMediaGraphics/musk_2.jpg",
-    "/assets/SocialMediaGraphics/musk_3.jpg",
-    "/assets/SocialMediaGraphics/musk_4.jpg",
-    "/assets/SocialMediaGraphics/musk_5.jpg",
-    "/assets/SocialMediaGraphics/musk_6.jpg",
-    "/assets/SocialMediaGraphics/musk_7.jpg"
-  ];
   const sliderVariants = {
     initial: {
       opacity: 0
@@ -64,7 +45,7 @@ export default function SocialMediaGraphics({
           <span>
             <div className="text-[2vw]">adobe illustrator + photoshop</div>
             <div className="ml-[1vw] grid grid-cols-5  gap-2 ">
-              {image_src_illustrator.map((src, index) => {
+              {graphics_arr.map((src, index) => {
                 return (
                   <img src={src} key={index} alt="" className="rounded-lg" />
                 );
@@ -78,7 +59,7 @@ export default function SocialMediaGraphics({
           <span>
             <div className="text-[2vw] mt-[40vh]">\\\adobe photoshop</div>
             <div className="ml-[1vw] grid grid-cols-3  gap-2 ">
-              {image_src_musk.map((src, index) => {
+              {musk_arr.map((src, index) => {
                 return (
                   <img src={src} key={index} alt="" className="rounded-lg" />
                 );

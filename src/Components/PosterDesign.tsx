@@ -2,6 +2,8 @@
 import { motion } from "motion/react";
 import { useInView } from "motion/react";
 import { useEffect, useRef } from "react";
+import woman from "/assets/erstiparty/woman.png";
+import poster from "/assets/erstiparty/poster.png";
 export default function PosterDesign({
   setIndex
 }: {
@@ -43,11 +45,7 @@ export default function PosterDesign({
             illusion of space
           </div>
           <span className="absolute top-[30vh]">
-            <img
-              src="/assets/erstiparty/woman.png"
-              alt=""
-              className="w-[17vw]"
-            />
+            <img src={woman} alt="" className="w-[17vw]" />
             <div className="ml-[1vw]">
               <div className="text-[1vw]">"space age" source: pinterest</div>
               <div className="text-[2vw] mt-[-2.5vh]">
@@ -56,7 +54,7 @@ export default function PosterDesign({
             </div>
           </span>
           <img
-            src="/assets/erstiparty/poster.png"
+            src={poster}
             alt=""
             className="absolute left-[30vw] h-[80vh] top-[20vh]"
           />

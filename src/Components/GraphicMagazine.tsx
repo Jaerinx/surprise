@@ -2,6 +2,9 @@
 import { motion } from "motion/react";
 import { useInView } from "motion/react";
 import { useEffect, useRef } from "react";
+import magazine_1 from "/assets/Graphic_Magazine/GraphicMagazine_1.png";
+import magazine_2 from "/assets/Graphic_Magazine/GraphicMagazine_2.png";
+import magazine_3 from "/assets/Graphic_Magazine/GraphicMagazine_3.png";
 export default function GraphicMagazine({
   setIndex
 }: {
@@ -9,10 +12,7 @@ export default function GraphicMagazine({
 }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { amount: 0.25 });
-  const image_src_illustrator = [
-    "/assets/Graphic_Magazine/GraphicMagazine_1.png",
-    "/assets/Graphic_Magazine/GraphicMagazine_2.png"
-  ];
+  const image_src_illustrator = [magazine_1, magazine_2];
   const sliderVariants = {
     initial: {
       opacity: 0
@@ -54,11 +54,7 @@ export default function GraphicMagazine({
               );
             })}
           </div>
-          <img
-            src="/assets/Graphic_Magazine/GraphicMagazine_3.png"
-            alt=""
-            className="ml-[1vw] mt-[10vw]"
-          />
+          <img src={magazine_3} alt="" className="ml-[1vw] mt-[10vw]" />
         </span>
       </div>
     </motion.div>

@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import useWeb3Forms from "@web3forms/react";
 import { useState } from "react";
 import { Navigate, useNavigate } from "react-router";
+import rightArrow from "/assets/right-arrow.png";
 export default function Contact() {
   const navigate = useNavigate();
   const {
@@ -45,7 +46,7 @@ export default function Contact() {
     >
       <div className="relative w-[40vw] text-white m-auto border-2 h-[80vh] border-x-darkpink border-y-katpink rounded-lg mt-[10vh] flex flex-col items-center">
         <motion.img
-          src="/right-arrow.png"
+          src={rightArrow}
           alt=""
           whileHover={{ scale: 0.9 }}
           className="w-[2vw] absolute left-5 top-7 cursor-pointer"
