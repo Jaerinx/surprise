@@ -1,0 +1,36 @@
+@import "tailwindcss";
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: black;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: playFair;
+  src: url("/fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf");
+}
+@theme {
+  --color-katpink: rgb(224, 28, 120);
+  --color-darkpink: rgb(149, 110, 129);
+  --color-blue: rgb(0, 96, 255);
+
+  --font-fancy: playFair;
+  --font-ariel: Arial, Helvetica, sans-serif;
+}
+@layer base {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  img {
+    border-radius: 0.5rem;
+  }
+}
