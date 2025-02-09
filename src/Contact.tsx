@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { AnimatePresence, motion } from "motion/react";
 import { useForm } from "react-hook-form";
 import useWeb3Forms from "@web3forms/react";
@@ -83,7 +84,7 @@ export default function Contact() {
             />
             {errors.name && (
               <div className="mt-1 text-red-600">
-                <small>{errors.name.message}</small>
+                <small>{errors.name.message?.toString()}</small>
               </div>
             )}
           </div>
@@ -96,7 +97,6 @@ export default function Contact() {
               id="email_address"
               type="email"
               placeholder="Email Address"
-              name="email"
               autoComplete="false"
               className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-gray-900   focus:ring-4  ${
                 errors.email
@@ -113,14 +113,13 @@ export default function Contact() {
             />
             {errors.email && (
               <div className="mt-1 text-red-600">
-                <small>{errors.email.message}</small>
+                <small>{errors.email.message?.toString()}</small>
               </div>
             )}
           </div>
 
           <div className="mb-3">
             <textarea
-              name="message"
               placeholder="Your Message"
               className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white dark:placeholder:text-gray-200 dark:bg-gray-900   rounded-md outline-none  h-36 focus:ring-4  ${
                 errors.message
@@ -134,7 +133,7 @@ export default function Contact() {
             {errors.message && (
               <div className="mt-1 text-red-600">
                 {" "}
-                <small>{errors.message.message}</small>
+                <small>{errors.message.message?.toString()}</small>
               </div>
             )}
           </div>
