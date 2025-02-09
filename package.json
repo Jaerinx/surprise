@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://jaerinx.github.io/surprise/",
+  "homepage": "https://jaerinx.github.io/surprise",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

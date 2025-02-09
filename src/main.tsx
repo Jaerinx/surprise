@@ -9,7 +9,7 @@ import { AnimatePresence } from "motion/react";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/surprise">
       <AnimatePresence mode="wait">
         <Routes>
           <Route path="/home" element={<Portfolio />} />
